@@ -1,0 +1,9 @@
+<h2>{{contact.name}}</h2>
+<ul>
+    <li ng-repeat="item in contact.items" style="margin-top: 20px;">
+        <a href="javascript:;">{{item.type}}</a><span>：</span>
+        <span ng-show="!item.edit">{{item.value}}</span>
+        <input type="text" ng-model="item.value" ng-show="item.edit" autofocus="">
+        <a class="btn btn-primary" ng-click="edit(item)">{{item.edit?"保存":"修改"}}</a>
+    </li>
+</ul>

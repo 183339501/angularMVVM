@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Our uiRouterSample module defined here -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--&lt;!&ndash; styles for ng-animate are located here &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+
+    <title>数据统计系统</title>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li ng-class="{active:contacts}"><a href="#/contact">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div ng-view class="container slide" style="padding-top: 80px;"></div>
+
+<script data-main="js/app.js" src="js/lib/require.js"></script>
+<hr>
+</body>
+</html>
