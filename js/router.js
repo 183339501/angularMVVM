@@ -1,4 +1,5 @@
-define(["angular","controller/indexCtrl","directive/appDirective","controller/contactCtrl","factory/contacts.service","controller/contactsDetailCtrl"],function (angular) {
+var depency = ["angular","controller/indexCtrl","directive/appDirective","controller/contactCtrl","factory/contacts.service","controller/contactsDetailCtrl"];
+define(depency,function (angular) {
 
     var md = angular.module("contactsApp",["ngRoute","appController","contactsService","contactDirective"]);
     /****************路由配置*******************/
