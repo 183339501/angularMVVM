@@ -7,12 +7,14 @@
         {
           "id": "a",
           "type": "phone number",
-          "value": "555-1234-1234"
+          "value": "555-1234-1234",
+          "relation":[]
         },
         {
           "id": "b",
           "type": "email",
-          "value": "alice@mailinator.com"
+          "value": "alice@mailinator.com",
+          "relation":[]
         }
       ]
     },
@@ -23,12 +25,14 @@
         {
           "id": "a",
           "type": "blog",
-          "value": "http://bob.blogger.com"
+          "value": "http://bob.blogger.com",
+          "relation":[]
         },
         {
           "id": "b",
           "type": "fax",
-          "value": "555-999-9999"
+          "value": "555-999-9999",
+          "relation":[]
         }
       ]
     },
@@ -39,7 +43,8 @@
         {
           "id": "a",
           "type": "full name",
-          "value": "Eve Adamsdottir"
+          "value": "Eve Adamsdottir",
+          "relation":[]
         }
       ]
     }

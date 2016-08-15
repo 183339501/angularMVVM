@@ -5,5 +5,7 @@
         <span ng-show="!item.edit">{{item.value}}</span>
         <input type="text" ng-model="item.value" ng-show="item.edit" autofocus="">
         <a class="btn btn-primary" ng-click="edit(item)">{{item.edit?"保存":"修改"}}</a>
+        <label>关系</label>
+        <label ng-repeat="c in typeData"><input type="checkbox"   name="typeData[]"   ng-checked="item.relation.indexOf(c.value) > -1"  ng-click="typeChecked(item,c.value)"/>{{c.name}}&nbsp;&nbsp;&nbsp;</label>
     </li>
 </ul>
